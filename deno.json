@@ -32,7 +32,7 @@
 	"tasks": {
 		"start": "deno run --env --allow-env src/main.ts",
 		"dev": "deno run --env --allow-env --watch src/main.ts",
-		"qa": "deno fmt && deno lint --config deno.json && deno test --config deno.json"
+		"qa": "deno check --all src/main.ts && deno fmt && deno lint --config deno.json && deno test --config deno.json"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@^1.0.4",
